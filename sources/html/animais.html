@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Animais Peçonhentos — Click Salve</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/sources/css/animais.css">
+</head>
+
+<body class="animais-page">
+
+  <main class="center">
+    <div class="container">
+
+      <!-- CABEÇALHO -->
+      <header class="page-header">
+        <h1>Animais Peçonhentos</h1>
+        <p>Identifique com segurança e siga as instruções abaixo.</p>
+      </header>
+
+      <!-- IMAGEM PRINCIPAL -->
+      <div class="hero center">
+        <img src="Imagens-projeto/Guia.png" alt="Guia de identificação de animais peçonhentos" class="hero-img">
+      </div>
+
+      <!-- CARD DE EMERGÊNCIA (IGUAL AO PADRÃO DO SITE) -->
+      <div class="bg-red-100 border-l-4 border-red-600 p-4 rounded-lg mb-6">
+        <div class="flex items-start">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="text-red-600 mr-3">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2
+              19.79 19.79 0 0 1-8.63-3.07
+              19.5 19.5 0 0 1-6-6
+              19.79 19.79 0 0 1-3.07-8.67
+              A2 2 0 0 1 4.11 2h3
+              a2 2 0 0 1 2 1.72
+              12.84 12.84 0 0 0 .7 2.81
+              2 2 0 0 1-.45 2.11
+              L8.09 9.91a16 16 0 0 0 6 6
+              l1.27-1.27a2 2 0 0 1 2.11-.45
+              12.84 12.84 0 0 0 2.81.7
+              A2 2 0 0 1 22 16.92z" />
+          </svg>
+
+          <div>
+            <p class="font-bold text-red-800">
+              Em caso de acidente, ligue para o SAMU (192) imediatamente!
+            </p>
+            <p class="text-red-800">
+              Não tente tratamentos caseiros. Atendimento médico rápido salva vidas.
+            </p>
+
+            <a href="tel:192" class="btn btn-call">
+              Ligar para o SAMU
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ANIMAIS -->
+      <section class="animais-images">
+
+        <div class="animais-img-wrapper">
+          <img src="Imagens-projeto/Aranhas.png" alt="Aranhas" class="animais-illustration">
+          <div class="img-caption">
+            <strong>Aranhas</strong><br>
+            Lave o local apenas com água e sabão. Evite compressas caseiras.
+          </div>
+        </div>
+
+        <div class="animais-img-wrapper">
+          <img src="Imagens-projeto/Cobras.png" alt="Cobras" class="animais-illustration">
+          <div class="img-caption">
+            <strong>Cobras</strong><br>
+            Mantenha a vítima calma e o membro afetado imóvel.
+          </div>
+        </div>
+
+        <div class="animais-img-wrapper">
+          <img src="Imagens-projeto/Escorpioes.png" alt="Escorpiões" class="animais-illustration">
+          <div class="img-caption">
+            <strong>Escorpiões</strong><br>
+            Observe sintomas e procure atendimento imediatamente.
+          </div>
+        </div>
+
+      </section>
+
+      <!-- INSTRUÇÕES -->
+      <section class="instructions-card" role="region"
+        aria-label="Instruções para acidentes com animais peçonhentos">
+
+        <h2>O que fazer</h2>
+        <ul>
+          <li>Afaste a vítima do animal com segurança</li>
+          <li>Mantenha a pessoa calma e em repouso</li>
+          <li>Imobilize o membro afetado</li>
+          <li>Lave apenas com água corrente, se possível</li>
+        </ul>
+
+        <h2>O que NÃO fazer</h2>
+        <ul>
+          <li>Não fazer cortes ou torniquetes</li>
+          <li>Não sugar o veneno</li>
+          <li>Não aplicar substâncias caseiras</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn btn-call" href="tel:192">Ligar para emergência</a>
+          <a class="btn btn-back" href="index.html">Voltar</a>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
