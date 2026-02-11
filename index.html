@@ -1,114 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- VLibras -->
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
-    <title>CLICK SALVE - Vida salva em um clique</title>
-
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="sources/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guia educativo de primeiros socorros: parada cardíaca, engasgo, animais peçonhentos e apoio policial.">
+  <title>Primeiros Socorros | Projeto Integrador</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="header-item">
-            <img src="sources/img/saude.jpg" alt="Logo Click Salve">
-            <h1>CLIQUE SALVE</h1>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Início">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Primeiros Socorros</span>
+    </a>
+    <nav class="navlinks" aria-label="Navegação principal">
+      <a data-nav href="index.html">Início</a>
+      <a data-nav href="pages/parada.html">Parada cardíaca</a>
+      <a data-nav href="pages/engasgo.html">Engasgo</a>
+      <a data-nav href="pages/animais.html">Animais peçonhentos</a>
+      <a data-nav href="pages/policia.html">Apoio policial</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker"><b>Guia educativo</b> • leitura rápida • conteúdo organizado</div>
+        <h1>Primeiros Socorros<br>com foco em situações comuns</h1>
+        <p class="lead">
+          Um site simples, direto e bem estruturado para apoiar o aprendizado em situações de urgência.
+          Aqui você encontra orientações gerais do que fazer e do que evitar — com ênfase em acionar ajuda especializada.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="pages/parada.html">Começar por Parada Cardíaca</a>
+          <a class="btn" href="#temas">Ver temas</a>
         </div>
-    </header>
 
-    <!-- GRID DAS SITUAÇÕES -->
-    <div class="layout">
-        <div class="situacoes">
-
-            <div class="card" data-page="sources/html/parada.html" role="button" tabindex="0">
-                <img src="sources/img/parada.png" alt="Parada Cardiorespiratória">
-                <h2>Parada Cardiorespiratória</h2>
+        <div class="section" style="padding-bottom:0;">
+          <div class="grid cards">
+            <div class="col-6">
+              <div class="card pad">
+                <h2>Regra de ouro</h2>
+                <p>Em risco de vida, a prioridade é <b>segurança</b>, <b>avaliação rápida</b> e <b>acionar socorro</b>. Não tente “resolver tudo sozinho”.</p>
+              </div>
             </div>
-
-            <div class="card" data-page="sources/html/animais.html" role="button" tabindex="0">
-                <img src="sources/img/peçonhentos.png" alt="Animais Peçonhentos">
-                <h2>Animais Peçonhentos</h2>
+            <div class="col-6">
+              <div class="card pad">
+                <h2>Como usar este site</h2>
+                <p>Abra um tema, siga a sequência (o que é → sinais → o que fazer → o que não fazer) e finalize com quando chamar ajuda.</p>
+              </div>
             </div>
-
-            <div class="card" data-page="sources/html/engasgos.html" role="button" tabindex="0">
-                <img src="sources/img/engasgo.png" alt="Engasgamentos">
-                <h2>Engasgamentos</h2>
-            </div>
-
+          </div>
         </div>
+      </div>
+
+      <figure class="card hero-figure" aria-label="Imagem ilustrativa">
+        <img src="assets/img/parada-cardiaca.png" alt="Ilustração relacionada a primeiros socorros">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="caption">Conteúdo para fins educacionais • Em emergência, acione 192 / 193 / 190</div>
+      </figure>
     </div>
+  </section>
 
-    <!-- BOTÃO LIGAR -->
-    <button id="BotaoLigar" class="BotaoLigar">
-        <img src="sources/img/phone.png" alt="Ligar">
-    </button>
+  <section id="temas" class="section">
+    <div class="container">
+      <h2>Temas principais</h2>
+      <p class="sub">Cada página foi estruturada como um mini-guia: definição, sinais, condutas e alertas.</p>
 
-    <!-- MODAL -->
-    <div class="Modal" id="modal">
-        <div class="Modal-content">
-            <span class="close-button" id="closeBtn">&times;</span>
-            <h2>Escolha o serviço de emergência</h2>
+      <div class="grid cards">
+        <a class="topic col-4" href="pages/parada.html">
+          <div class="top"><span class="badge red">Crítico</span><span class="small">RCP • DEA</span></div>
+          <h3>Parada Cardíaca</h3>
+          <p>Reconhecer rapidamente e iniciar compressões torácicas enquanto aciona o socorro.</p>
+          <div class="meta"><span>192/193</span><span>Tempo = vida</span></div>
+        </a>
 
-            <div class="emergency-buttons">
-                <a class="btn-emergency" href="tel:192">Ligar para SAMU (192)</a>
-                <a class="btn-emergency" href="tel:193">Ligar para Bombeiros (193)</a>
-                <a class="btn-emergency" href="tel:190">Ligar para Polícia (190)</a>
-            </div>
-        </div>
+        <a class="topic col-4" href="pages/engasgo.html">
+          <div class="top"><span class="badge">Urgente</span><span class="small">Vias aéreas</span></div>
+          <h3>Engasgo</h3>
+          <p>Identificar se é parcial ou total e agir com segurança conforme idade e consciência.</p>
+          <div class="meta"><span>Manobra</span><span>Observação</span></div>
+        </a>
+
+        <a class="topic col-4" href="pages/animais.html">
+          <div class="top"><span class="badge green">Atenção</span><span class="small">Picadas</span></div>
+          <h3>Animais Peçonhentos</h3>
+          <p>Cuidados imediatos, o que evitar e como facilitar o atendimento.</p>
+          <div class="meta"><span>Registro</span><span>Imobilizar</span></div>
+        </a>
+
+        <a class="topic col-12" href="pages/policia.html">
+          <div class="top"><span class="badge">Suporte</span><span class="small">Segurança</span></div>
+          <h3>Apoio Policial</h3>
+          <p>Quando acionar, como comunicar e como manter sua segurança e a de terceiros.</p>
+          <div class="meta"><span>190</span><span>Relato claro</span><span>Evitar riscos</span></div>
+        </a>
+      </div>
     </div>
-
-    <!-- JAVASCRIPT -->
-    <script src="sources/javascript/script.js"></script>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-column footer-about">
-                <h4>Click Salve</h4>
-                <p>Aplicativo informativo para orientar ações iniciais em emergências. Este site não substitui o atendimento profissional.</p>
-            </div>
-
-            <div class="footer-column footer-links">
-                <h4>Links úteis</h4>
-                <ul>
-                    <li><a href="#">Como agir em emergências</a></li>
-                    <li><a href="#">Guia de primeiros socorros</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column footer-contact">
-                <h4>Contato rápido</h4>
-                <p><strong>Polícia:</strong> 190</p>
-                <p><strong>Bombeiros:</strong> 193</p>
-                <p><strong>SAMU:</strong> 192</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <small>© 2025 Click Salve — Informação educacional. Em emergência, ligue para os serviços locais.</small>
-        </div>
-    </footer>
-
-    <!-- VLibras inicialização -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="gap:10px; margin-bottom:8px;">
+        <span class="dot" aria-hidden="true"></span>
+        <span><b>Projeto Integrador</b> • Primeiros Socorros</span>
+      </div>
+      <div class="small">
+        Conteúdo educativo. Em emergências, acione o serviço apropriado imediatamente.
+      </div>
     </div>
-
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    <div class="small">
+      <b>Emergência (Brasil)</b><br>
+      SAMU: 192 • Bombeiros: 193 • Polícia: 190<br>
+      <span class="small">Atualizado em 10/02/2026</span>
+    </div>
+  </div>
+</footer>
+<button class="totop" data-totop type="button" aria-label="Voltar ao topo">↑ Topo</button>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
