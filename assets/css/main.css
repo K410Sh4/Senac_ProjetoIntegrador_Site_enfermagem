@@ -112,12 +112,29 @@ img{ max-width: 100%; height: auto; display: block; }
 
 .contact{ 
   position: sticky;
-  padding: 1vw;
-  background: rgb(50, 50, 50);
-  width: 30%;
-  height: 15vh;
+  padding: 0.2vh 1vw;
+  background: rgba(114, 114, 114, 0.628);
+  width: 20%;
+  height: 20%;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  justify-content: center;
+  justify-items: center;
   bottom: 0;
   left: 0;
+}
+
+.options{
+  padding: 0.1vh 2vw;
+  margin: 1vh 0vw;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1vw;
+  color: white;
+  background: rgba(0, 0, 0, 0.641);
+  border: solid 2px rgb(170, 170, 170);
+
 }
 
 #conteudo{
