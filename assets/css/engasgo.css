@@ -1,14 +1,14 @@
 :root{
-  --bg: #6c0000;
-  --surface: #bf0000;
-  --card: #650202;
+  --bg: #00196c;
+  --surface: #0023bf;
+  --card: #020965;
   --text: #ffffff;
   --muted: #e7e7e7;
-  --brand: #7a0000;
-  --brand-2: #d33838;
-  --danger: #ff5c7a;
+  --brand: #00087a;
+  --brand-2: #4238d3;
+  --danger: #7a5cff;
   --border: rgba(255,255,255,.10);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --shadow: 0 10px 30px rgba(14, 0, 209, 0.35);
   --radius: 18px;
   --max: 1100px;
 }
@@ -56,7 +56,7 @@ img{ max-width: 100%; height: auto; display: block; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(157, 0, 0, 0.65);
+  background: rgba(0, 68, 157, 0.65);
   border-bottom: 1px solid var(--border);
 }
 
@@ -131,8 +131,8 @@ img{ max-width: 100%; height: auto; display: block; }
 .hero{
     margin: 1vh 0vw;
   padding: 56px 0 26px;
-  background: rgba(233, 0, 0, 0.187);
-  border: 1px solid rgba(250, 82, 82, 0.614);
+  background: rgba(4, 19, 29, 0.187);
+  border: 1px solid rgba(82, 127, 250, 0.614);
   border-radius: 10px;
 }
 .hero-grid{
@@ -199,7 +199,7 @@ h1{
   border-color: rgba(255,255,255,.18);
 }
 .btn.primary{
-  background: linear-gradient(135deg, rgba(255, 58, 58, 0.95), rgba(211, 56, 56, 0.92));
+  background: linear-gradient(135deg, rgba(61, 58, 255, 0.95), rgba(0, 197, 223, 0.92));
   border-color: transparent;
   color: #04111f;
 }
