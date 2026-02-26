@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Guia educativo de primeiros socorros: parada cardíaca, engasgo, animais peçonhentos e apoio policial.">
   <title>Primeiros Socorros | Projeto Integrador</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animais.css">
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
 </head>
@@ -16,11 +16,10 @@
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Início">
       <span class="dot" aria-hidden="true"></span>
-      <span>Primeiros Socorros</span>
+      <span>Parada Cardiaca</span>
     </a>
     <nav class="navlinks" aria-label="Navegação principal">
-      <a data-nav href="index.html" class="Select">Início</a>
-      <a data-nav href="pages/parada.html"  class="Select">Parada cardíaca</a>
+       <a data-nav href="index.html" class="Select">Início</a>
       <a data-nav href="pages/engasgo.html" class="Select">Engasgo</a>
       <a data-nav href="pages/animais.html" class="Select">Animais peçonhentos</a>
       <a data-nav href="pages/policia.html" class="Select">Apoio policial</a>
@@ -32,28 +31,30 @@
     <div class="container hero-grid">
       <div>
         <div class="top">
-        <h1>Primeiros Socorros<br>com foco em situações comuns</h1>
+        <h1>Primeiros Socorros:<br>Parada cardiaca</h1>
         <p class="lead">
-          Um site simples, direto e bem estruturado para apoiar o aprendizado em situações de urgência.
-          Aqui você encontra orientações gerais do que fazer e do que evitar — com ênfase em acionar ajuda especializada.
+         
         </p>
         <div class="actions">
-          <a class="btn primary" href="pages/ParadCard.html">Começar por Parada Cardíaca</a>
+          <a class="btn primary" href="/index.html">Voltar ao início</a>
           <a class="btn" href="#temas">Ver temas</a>
+        </div>
+        <div class="actions">
+          <a class="btn destaque" href="/pages/ParadCardVideo.html">▶️ Ver video de ajuda</a>
         </div>
         </div>
         <div class="section" style="padding-bottom:0;">
           <div class="grid cards">
             <div class="col-6">
               <div class="card pad">
-                <h2>Regra de ouro</h2>
-                <p>Em risco de vida, a prioridade é <b>segurança</b>, <b>avaliação rápida</b> e <b>acionar socorro</b>. Não tente “resolver tudo sozinho”.</p>
+                <h2>PCR</h2>
+                <p>é uma emergência grave onde o coração para de bater e a respiração cessa, interrompendo o fluxo sanguíneo oxigenado e exigindo atendimento imediato.</p>
               </div>
             </div>
             <div class="col-6">
               <div class="card pad">
-                <h2>Como usar este site</h2>
-                <p>Abra um tema, siga a sequência (o que é → sinais → o que fazer → o que não fazer) e finalize com quando chamar ajuda.</p>
+                <h2>RCP</h2>
+                <p>é um procedimento de emergência vital realizado em casos de parada cardíaca, combinando compressões torácicas e, opcionalmente, respiração boca a boca</p>
               </div>
             </div>
           </div>
@@ -61,7 +62,7 @@
       </div>
 
       <figure class="card hero-figure" aria-label="Imagem ilustrativa">
-        <img src="assets/img/parada-cardiaca.png" alt="Ilustração relacionada a primeiros socorros">
+        <img src="/assets/img/pcrRetrato.png" alt="Ilustração relacionada a primeiros socorros">
         <div class="overlay" aria-hidden="true"></div>
         <div class="caption">Conteúdo para fins educacionais • Em emergência, acione 192 / 193 / 190</div>
       </figure>
@@ -71,15 +72,8 @@
   <section id="temas" class="section">
     <div class="container">
       <h2>Temas principais</h2>
-      <p class="sub">Cada página foi estruturada como um mini-guia: definição, sinais, condutas e alertas.</p>
 
       <div class="grid cards">
-        <a class="topic col-4" href="pages/parada.html">
-          <div class="top"><span class="badge red">Crítico</span><span class="small">RCP • DEA</span></div>
-          <h3>Parada Cardíaca</h3>
-          <p>Reconhecer rapidamente e iniciar compressões torácicas enquanto aciona o socorro.</p>
-          <div class="meta"><span>192/193</span><span>Tempo = vida</span></div>
-        </a>
 
         <a class="topic col-4" href="pages/engasgo.html">
           <div class="top"><span class="badge">Urgente</span><span class="small">Vias aéreas</span></div>
@@ -123,7 +117,6 @@
     </div>
   </div>
 </footer>
-
 <button class="totop" data-totop type="button" aria-label="Voltar ao topo">↑ Topo</button>
 <script src="assets/js/main.js"></script>
 </body>
@@ -132,10 +125,6 @@
     <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>
     </div>
-</div>
-
-<div class="contact">
-<a class="options">Ligar para polícia</a>
 </div>
 
 <script>

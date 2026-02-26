@@ -1,11 +1,11 @@
 :root{
-  --bg: #0b1220;
-  --surface: #0f1a2f;
-  --card: #0f1a2f;
-  --text: #e9eefc;
-  --muted: #b8c3dd;
-  --brand: #3aa0ff;
-  --brand-2: #38d39f;
+  --bg: #6c0000;
+  --surface: #bf0000;
+  --card: #650202;
+  --text: #ffffff;
+  --muted: #e7e7e7;
+  --brand: #7a0000;
+  --brand-2: #d33838;
   --danger: #ff5c7a;
   --border: rgba(255,255,255,.10);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
@@ -18,9 +18,9 @@ html{ scroll-behavior: smooth; }
 body{
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  background: radial-gradient(1200px 600px at 20% -10%, rgba(58,160,255,.25), transparent 60%),
-              radial-gradient(1000px 500px at 80% 0%, rgba(56,211,159,.18), transparent 55%),
-              linear-gradient(180deg, var(--bg), #070b14 80%);
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(255, 58, 58, 0.25), transparent 60%),
+              radial-gradient(1000px 500px at 80% 0%, rgba(211, 56, 56, 0.18), transparent 55%),
+              linear-gradient(180deg, var(--bg), #140707 80%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -34,6 +34,9 @@ img{ max-width: 100%; height: auto; display: block; }
   margin: 0 auto;
 }
 
+.Select:hover{
+    transform: scale(1.15);
+}
 
 
 .skip-link{
@@ -53,7 +56,7 @@ img{ max-width: 100%; height: auto; display: block; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(7,11,20,.65);
+  background: rgba(157, 0, 0, 0.65);
   border-bottom: 1px solid var(--border);
 }
 
@@ -63,6 +66,15 @@ img{ max-width: 100%; height: auto; display: block; }
   justify-content: space-between;
   gap: 16px;
   padding: 14px 0;
+}
+
+.destaque{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.destaque:hover{
+    transform: scale(1.1);
+    backdrop-filter: blur(13vw 1vw);
 }
 
 .brand{
@@ -77,7 +89,7 @@ img{ max-width: 100%; height: auto; display: block; }
   height: 12px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  box-shadow: 0 0 0 6px rgba(58,160,255,.12);
+  box-shadow: 0 0 0 6px rgba(255, 58, 58, 0.12);
 }
 
 .navlinks{
@@ -110,16 +122,6 @@ img{ max-width: 100%; height: auto; display: block; }
   background: rgba(58,160,255,.12);
 }
 
-.contact{ 
-  position: sticky;
-  padding: 1vw;
-  background: rgb(50, 50, 50);
-  width: 30%;
-  height: 15vh;
-  bottom: 0;
-  left: 0;
-}
-
 #conteudo{
   padding: 0vw 1vw;
 }
@@ -127,9 +129,10 @@ img{ max-width: 100%; height: auto; display: block; }
   margin-bottom: 10vw;
 }
 .hero{
+    margin: 1vh 0vw;
   padding: 56px 0 26px;
-  background: rgba(0, 18, 67, 0.187);
-  border: 1px solid rgba(6, 43, 165, 0.614);
+  background: rgba(233, 0, 0, 0.187);
+  border: 1px solid rgba(250, 82, 82, 0.614);
   border-radius: 10px;
 }
 .hero-grid{
@@ -196,7 +199,7 @@ h1{
   border-color: rgba(255,255,255,.18);
 }
 .btn.primary{
-  background: linear-gradient(135deg, rgba(58,160,255,.95), rgba(56,211,159,.92));
+  background: linear-gradient(135deg, rgba(255, 58, 58, 0.95), rgba(211, 56, 56, 0.92));
   border-color: transparent;
   color: #04111f;
 }
@@ -242,10 +245,7 @@ h1{
   font-size: 13px;
   font-weight: 650;
 }
-.btnhover:hover{
-    position: fixed;
-    color: red;
-}
+
 .grid{
   display:grid;
   gap: 14px;
