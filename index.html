@@ -7,7 +7,6 @@
   <title>Primeiros Socorros | Projeto Integrador</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
 </head>
 <body>
 
@@ -134,12 +133,15 @@
     </div>
 </div>
 
-<div class="contact">
-<a><button class="options"><h2>Ligar para Polícia:190</h2></button></a>
-<a><button class="options"><h2>Ligar para Polícia:190</h2></button></a>
-<a><button class="options"><h2>Ligar para Polícia:190</h2></button></a>
+<di>
+<div class="contact" id="contactframe">
+  <button class="btnx" id="close-frame"><h1>X</h1></button>
+<a><button class="options"><img  src="/assets/img/policiaicon.png" class="imgoptions"><h2>Polícia:190</h2></button></a>
+<a><button class="options"><img src="/assets/img/Samuicon.png" class="imgoptions"><h2>Samu:192</h2></button></a>
+<a><button class="options"><img src="/assets/img/bombicon.png" class="imgoptions"><h2>Bombeiros:193</h2></button></a>
 </div>
 
+<script src="/assets/js/main.js"></script>
 <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>

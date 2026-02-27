@@ -2,7 +2,7 @@
   --bg: #0b1220;
   --surface: #0f1a2f;
   --card: #0f1a2f;
-  --text: #e9eefc;
+  --text: #ffffff;
   --muted: #b8c3dd;
   --brand: #3aa0ff;
   --brand-2: #38d39f;
@@ -13,8 +13,12 @@
   --max: 1100px;
 }
 
-*{ box-sizing: border-box; }
-html{ scroll-behavior: smooth; }
+*{ box-sizing: border-box; padding: 0;
+margin: 0;
+color: white;}
+html{ scroll-behavior: smooth; 
+text-decoration: none;
+text-decoration-style: none;}
 body{
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
@@ -25,8 +29,7 @@ body{
   line-height: 1.6;
 }
 
-a{ color: inherit; text-decoration: none; }
-a:hover{ text-decoration: underline; text-decoration-color: rgba(58,160,255,.6); }
+a{ text-decoration: none; }
 img{ max-width: 100%; height: auto; display: block; }
 
 .container{
@@ -112,31 +115,74 @@ img{ max-width: 100%; height: auto; display: block; }
 
 .contact{ 
   position: sticky;
-  padding: 0.2vh 1vw;
+  padding: 0.4rem 0.1rem;
   background: rgba(114, 114, 114, 0.628);
-  width: 20%;
-  height: 20%;
+  width: 20rem;
+  height: 18rem;
   align-items: center;
   border: 1px solid white;
   border-radius: 10px;
-  justify-content: center;
-  justify-items: center;
+  justify-content: start;
+  justify-items: start;
+  backdrop-filter: blur(2px);
   bottom: 0;
   left: 0;
 }
 
 .options{
-  padding: 0.1vh 2vw;
-  margin: 1vh 0vw;
+  padding: 0.1rem 2rem;
+  margin: 0.5rem 0rem;
   width: 100%;
   border-radius: 10px;
-  font-size: 1vw;
+  font-size: 1rem;
+  display: flex;
   color: white;
-  background: rgba(0, 0, 0, 0.641);
+  background: rgba(24, 23, 23, 0.641);
   border: solid 2px rgb(170, 170, 170);
+  align-items: center;
 
 }
+.imgoptions{
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  overflow: hidden;
 
+}
+.btncontact{
+  display: flex;
+}
+.btnx{
+  width: 2rem;
+  height: 2rem;
+  padding: auto;
+  background: red;
+  border: 2px solid rgb(233, 105, 126);
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  display: flex;
+  
+}
+.btnx:hover{
+  cursor: pointer;
+  background: rgba(255, 0, 0, 0.582);
+  backdrop-filter: blur(2px);
+}
+.options:hover{
+  cursor: pointer;
+  box-shadow: rgb(0, 0, 0) 2px 2px 10px 10px;
+  transform: scale(1.01);
+}
+
+.btnx h1{
+  height: auto;
+
+  font-size: 100%;
+}
 #conteudo{
   padding: 0vw 1vw;
 }
