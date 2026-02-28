@@ -114,7 +114,7 @@ img{ max-width: 100%; height: auto; display: block; }
 }
 
 .contact{ 
-  position: sticky;
+  display: block;
   padding: 0.4rem 0.1rem;
   background: rgba(114, 114, 114, 0.628);
   width: 20rem;
@@ -183,6 +183,35 @@ img{ max-width: 100%; height: auto; display: block; }
 
   font-size: 100%;
 }
+
+.btnon{
+  position: sticky;
+  width: 6rem;
+  height: 6rem;
+  z-index: 10;
+  border-radius: 10px;
+  border: solid black 4px;
+  padding: 0.2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.163);
+  bottom: 0;
+  left: 0;
+}
+.btnon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.btnon img{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.063);
+}
+
 #conteudo{
   padding: 0vw 1vw;
 }
