@@ -1,27 +1,52 @@
 const framecontact = document.querySelector(".contact");
 const btnclose = document.querySelector(".btnx");
 const btnopen = document.querySelector(".btnon");
+const showHome = document.querySelector("#ShowHome");
+const showParadCard = document.querySelector("#ShowHeart");
+const showEng = document.querySelector("#ShowPulms");
+const showAniPe = document.querySelector("#ShowAnimal");
+const body = document.body;
+
 let btncounter = 0;
 framecontact.style.display = "none";
-/--o codigo nao roda a parte de estar trocando o valor do btncounter que determina se o botao está ativo ou nao--/
 function interagirbtn() {
     if (btncounter == 0) {
-        btncounter = btncounter + 1
+        btncounter = 1
+        btnopen.style.display = "block";
+        framecontact.style.display = "none";
     }
     else {
-       btncounter = btncounter - 1
+        btncounter = 0
+        btnopen.style.display = "none";
+        framecontact.style.display = "block";
     }
-    /--aki o btn couter deveria executar conforme o seu valor o parametro dentro do seu próprio if else abaixo--/
 }
-if (btncounter == 0) {
-    btnopen.style.display = "block";
-    framecontact.style.display = "none";
-}
-else {
-    btnopen.style.display = "none";
-    framecontact.style.display = "block";
-}
-/--aki o btn open e btn close recebem o eventlistener de click, significando assim que apos ser clicado no sequinte elemento ele rode a funcao interagirbtn--/
-btnopen.addEventListener("click",interagirbtn);
-btnclose.addEventListener("click",interagirbtn);
+btnopen.addEventListener("click", interagirbtn);
+btnclose.addEventListener("click", interagirbtn);
 
+
+
+if (body.id === 'home'){
+   showHome.style.background = "black";
+   showHome.style.boxShadow = "2px 3px 5px white";
+   showHome.style.transform = "scale(1.07)"
+   showHome.style.border = "1px solid white";
+}
+else if (body.id === 'animais'){
+   showAniPe.style.background = "black";
+   showAniPe.style.boxShadow = "2px 3px 5px white";
+   showAniPe.style.transform = "scale(1.07)"
+   showAniPe.style.border = "1px solid white";
+}
+else if (body.id === 'coracao'){
+   showParadCard.style.background = "black";
+   showParadCard.style.boxShadow = "2px 3px 5px white";
+   showParadCard.style.transform = "scale(1.07)"
+   showParadCard.style.border = "1px solid white";
+}
+else if (body.id === 'engasgo'){
+   showEng.style.background = "black";
+   showEng.style.boxShadow = "2px 3px 5px white";
+   showEng.style.transform = "scale(1.07)"
+   showEng.style.border = "1px solid white";
+}

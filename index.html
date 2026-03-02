@@ -11,7 +11,7 @@
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </head>
 
-<body>
+<body id="home">
 
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="topbar">
@@ -21,11 +21,11 @@
         <span>Primeiros Socorros</span>
       </a>
       <nav class="navlinks" aria-label="Navegação principal">
-        <a data-nav href="index.html" class="Select">Início</a>
-        <a data-nav href="pages/parada.html" class="Select">Parada cardíaca</a>
-        <a data-nav href="/pages/engasgo.html" class="Select">Engasgo</a>
-        <a data-nav href="pages/animais.html" class="Select">Animais peçonhentos</a>
-        <a data-nav href="pages/policia.html" class="Select">Apoio policial</a>
+        <a data-nav href="/index.html" class="Select" id="ShowHome">Início</a>
+        <a data-nav href="/pages/ParadCard.html" class="Select" id="ShowHeart">Parada cardíaca</a>
+        <a data-nav href="/pages/engasgo.html" class="Select" id="ShowPulms">Engasgo</a>
+        <a data-nav href="pages/animais.html" class="Select" id="ShowAnimal">Animais peçonhentos</a>
+        <a data-nav href="/index.html" class="Select">Apoio policial</a>
       </nav>
     </div>
   </header>
@@ -164,5 +164,5 @@
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
-
+<script src="/assets/js/main.js"></script>
 </html>

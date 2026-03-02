@@ -9,7 +9,7 @@
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
 </head>
-<body>
+<body id="engasgo">
 
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="topbar">
@@ -19,9 +19,11 @@
       <span>Engasgo.</span>
     </a>
     <nav class="navlinks" aria-label="Navegação principal">
-       <a data-nav href="index.html" class="Select">Início</a>
-      <a data-nav href="pages/animais.html" class="Select">Animais peçonhentos</a>
-      <a data-nav href="pages/policia.html" class="Select">Apoio policial</a>
+        <a data-nav href="/index.html" class="Select" id="ShowHome">Início</a>
+        <a data-nav href="/pages/ParadCard.html" class="Select" id="ShowHeart">Parada cardíaca</a>
+        <a data-nav href="/pages/engasgo.html" class="Select" id="ShowPulms">Engasgo</a>
+        <a data-nav href="/pages/animais.html" class="Select" id="ShowAnimal">Animais peçonhentos</a>
+        <a data-nav href="/index.html" class="Select">Apoio policial</a>
     </nav>
   </div>
 </header>
@@ -74,14 +76,14 @@
 
       <div class="grid cards">
 
-        <a class="topic col-4" href="pages/animais.html">
+        <a class="topic col-4" href="/pages/animais.htmlpages/animais.html">
           <div class="top"><span class="badge green">Atenção</span><span class="small">Picadas</span></div>
           <h3>Animais Peçonhentos</h3>
           <p>Cuidados imediatos, o que evitar e como facilitar o atendimento.</p>
           <div class="meta"><span>Registro</span><span>Imobilizar</span></div>
         </a>
 
-        <a class="topic col-12" href="pages/policia.html">
+        <a class="topic col-12" href="/index.html">
           <div class="top"><span class="badge">Suporte</span><span class="small">Segurança</span></div>
           <h3>Apoio Policial</h3>
           <p>Quando acionar, como comunicar e como manter sua segurança e a de terceiros.</p>
@@ -110,7 +112,7 @@
   </div>
 </footer>
 <button class="totop" data-totop type="button" aria-label="Voltar ao topo">↑ Topo</button>
-<script src="assets/js/main.js"></script>
+
 </body>
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -122,4 +124,5 @@
 <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
+<script src="/assets/js/main.js"></script>
 </html>
