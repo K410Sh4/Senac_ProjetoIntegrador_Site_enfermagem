@@ -234,7 +234,9 @@ img{ max-width: 100%; height: auto; display: block; }
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns: 1fr; }
 }
-
+.carrossel{
+  display: flex;
+}
 .kicker{
   display:inline-flex;
   align-items:center;
