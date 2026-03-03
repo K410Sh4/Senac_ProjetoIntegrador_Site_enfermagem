@@ -201,6 +201,7 @@ img{ max-width: 100%; height: auto; display: block; }
   background: rgba(255, 255, 255, 0.163);
   bottom: 0;
   left: 0;
+  
 }
 .btnon:hover{
   cursor: pointer;
