@@ -21,17 +21,22 @@ if (body.id === 'home') {
    showHome.style.boxShadow = "2px 3px 5px white";
    showHome.style.transform = "scale(1.07)";
    showHome.style.border = "1px solid white";
-   framecontact.style.display = "none";
+   framecontact.style.display = "sticky";
    function interagirbtn() {
       if (btncounter == 0) {
          btncounter = 1
          btnopen.style.display = "block";
-         framecontact.style.display = "none";
+         framecontact.style.width = "20rem";
+         framecontact.style.height = "0rem";
+          framecontact.style.opacity = "0";
       }
       else {
          btncounter = 0
          btnopen.style.display = "none";
+         framecontact.style.width = "20rem";
+         framecontact.style.height = "17rem";
          framecontact.style.display = "block";
+         framecontact.style.opacity = "1";
       }
    }
    btnopen.addEventListener("click", interagirbtn);

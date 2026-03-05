@@ -100,6 +100,7 @@ img{ max-width: 100%; height: auto; display: block; }
 }
 
 .navlinks a{
+    margin: 0vw 1vw;
   display:inline-flex;
   align-items:center;
   gap: 8px;
