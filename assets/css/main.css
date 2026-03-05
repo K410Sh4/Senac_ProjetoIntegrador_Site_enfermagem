@@ -113,6 +113,10 @@ img{ max-width: 100%; height: auto; display: block; }
   background: rgba(58,160,255,.12);
 }
 
+.senaclogo{
+  width: 10rem;
+  margin: 2rem;
+}
 .contact{ 
   position: sticky;
   display: block;

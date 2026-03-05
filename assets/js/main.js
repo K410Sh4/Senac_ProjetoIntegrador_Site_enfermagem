@@ -5,16 +5,35 @@ const showHome = document.querySelector("#ShowHome");
 const showParadCard = document.querySelector("#ShowHeart");
 const showEng = document.querySelector("#ShowPulms");
 const showAniPe = document.querySelector("#ShowAnimal");
+const showAgra = document.querySelector("#ShowAgra");
 const img1 = document.querySelector(".engasgo");
 const img2 = document.querySelector(".animal");
 const img3 = document.querySelector(".coracao");
-imgs=[img1,img2,img3]
+imgs = [img1, img2, img3]
 const body = document.body;
 
 let btncounter = 0;
 let carcounter = 0;
 
-
+function interagirbtn() {
+   if (btncounter == 0) {
+      btncounter = 1
+      btnopen.style.display = "block";
+      framecontact.style.width = "20rem";
+      framecontact.style.height = "0rem";
+      framecontact.style.opacity = "0";
+   }
+   else {
+      btncounter = 0
+      btnopen.style.display = "none";
+      framecontact.style.width = "20rem";
+      framecontact.style.height = "17rem";
+      framecontact.style.display = "block";
+      framecontact.style.opacity = "1";
+   }
+}
+btnopen.addEventListener("click", interagirbtn);
+btnclose.addEventListener("click", interagirbtn);
 
 if (body.id === 'home') {
    showHome.style.background = "rgba(0, 0, 0, 0.3)";
@@ -22,25 +41,7 @@ if (body.id === 'home') {
    showHome.style.transform = "scale(1.07)";
    showHome.style.border = "1px solid white";
    framecontact.style.display = "sticky";
-   function interagirbtn() {
-      if (btncounter == 0) {
-         btncounter = 1
-         btnopen.style.display = "block";
-         framecontact.style.width = "20rem";
-         framecontact.style.height = "0rem";
-          framecontact.style.opacity = "0";
-      }
-      else {
-         btncounter = 0
-         btnopen.style.display = "none";
-         framecontact.style.width = "20rem";
-         framecontact.style.height = "17rem";
-         framecontact.style.display = "block";
-         framecontact.style.opacity = "1";
-      }
-   }
-   btnopen.addEventListener("click", interagirbtn);
-   btnclose.addEventListener("click", interagirbtn);
+
 
    img1.style.width = "0vw"
    img2.style.width = "0vw"
@@ -87,4 +88,10 @@ else if (body.id === 'engasgo') {
    showEng.style.boxShadow = "2px 3px 5px white";
    showEng.style.transform = "scale(1.07)";
    showEng.style.border = "1px solid white";
+}
+else if (body.id === 'Agradecimentos') {
+   showAgra.style.background = "rgba(0, 0, 0, 0.3)";
+   showAgra.style.boxShadow = "2px 3px 5px white";
+   showAgra.style.transform = "scale(1.07)";
+   showAgra.style.border = "1px solid white";
 }
